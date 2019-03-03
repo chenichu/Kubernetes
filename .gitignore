@@ -1,0 +1,5 @@
+# Ignore eksworkshop repo clones
+ecsdemo-crystal/
+ecsdemo-frontend/
+ecsdemo-nodejs/
+eksworkshop/

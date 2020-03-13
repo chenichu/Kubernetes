@@ -9,7 +9,7 @@ metadata:
 
 nodeGroups:
   - name: node-group-1
-    instanceType: t3.large
+    instanceType: t2.large
     desiredCapacity: 2
     allowSSH: true
     sshPublicKeyPath: <SSHKey>

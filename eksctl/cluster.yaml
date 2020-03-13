@@ -5,11 +5,11 @@ kind: ClusterConfig
 
 metadata:
   name: basic-cluster
-  region: us-east-2
+  region: <region>
 
 nodeGroups:
-  - name: ng-1
-    instanceType: m5.large
+  - name: node-group-1
+    instanceType: t3.large
     desiredCapacity: 2
     allowSSH: true
-    sshPublicKeyPath: CMHKey
+    sshPublicKeyPath: <SSHKey>

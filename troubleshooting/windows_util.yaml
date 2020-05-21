@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: windows-util
+  namespace: default
+spec:
+  containers:
+  - name: windows-util
+    image: mcr.microsoft.com/windows/servercore:1809
+    command:
+      - powershell.exe
+      - -command
+      - "Start-Sleep -Seconds 3600"
+    imagePullPolicy: IfNotPresent
+  nodeSelector:
+    kubernetes.io/os: windows

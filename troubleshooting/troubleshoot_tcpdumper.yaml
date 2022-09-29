@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: troubleshoot-util
+  # namespace: test
+  labels:
+    app: troubleshoot-util
+spec:
+  # serviceAccountName: my-service-account
+  containers:
+  - name: troubleshoot-util
+    image: public.ecr.aws/patrickc/troubleshoot-util
+    command:
+      - sleep
+      - "3600"
+    imagePullPolicy: IfNotPresent
+    resources:
+          limits:
+            memory: "128Mi"
+            cpu: 250m 
+  - name: tcpdumper
+    image: public.ecr.aws/patrickc/tcpdump-efs

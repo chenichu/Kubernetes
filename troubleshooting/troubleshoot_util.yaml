@@ -6,7 +6,7 @@ metadata:
 spec:
   containers:
   - name: troubleshoot-util
-    image: patrickc3832/troubleshoot_util:awscli
+    image: public.ecr.aws/patrickc/troubleshoot-util
     command:
       - sleep
       - "3600"
